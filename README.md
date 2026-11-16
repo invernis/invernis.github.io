@@ -10,6 +10,7 @@ It is a plain static site served by GitHub Pages: no framework, no build step an
 | :--- | :--- |
 | `index.html` | Homepage (English; German texts kept for later) |
 | `404.html` | Page shown for unknown addresses |
+| `imprint.html`, `privacy.html` | Imprint and privacy policy, served as `/imprint` and `/privacy` |
 | `assets/css/site.css` | All styles. Colours are CSS variables at the top; the dark theme is `:root[data-theme="dark"]` |
 | `assets/js/site.js` | Language and theme switches |
 | `assets/img/` | Hero photo in a light and a night version, each at 2640, 1320 and 800 px; browsers pick the size they need |
@@ -35,7 +36,7 @@ Any static file server works, for example:
 python3 -m http.server 8000
 ```
 
-Then open http://localhost:8000.
+Then open http://localhost:8000. GitHub Pages serves `imprint.html` as `/imprint` and `privacy.html` as `/privacy`; a simple local server needs the `.html` ending, for example http://localhost:8000/imprint.html.
 
 ## Deployment
 
