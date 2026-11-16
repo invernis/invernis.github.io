@@ -1,28 +1,27 @@
 <!doctype html>
-<html lang="de-CH" data-lang="de" data-theme="light">
+<html lang="en" data-lang="en" data-langs="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>INVERNIS - Verlässliche Arbeit. Schnell geliefert.</title>
+<title>INVERNIS - Work you can trust. Delivered quickly.</title>
 <meta name="title-de" content="INVERNIS - Verlässliche Arbeit. Schnell geliefert.">
 <meta name="title-en" content="INVERNIS - Work you can trust. Delivered quickly.">
-<meta name="description" content="INVERNIS GmbH ist ein Schweizer IT-Unternehmen, das für KMU Software baut, Infrastruktur betreibt und IT-Strategie berät, verlässlich und schnell.">
+<meta name="description" content="INVERNIS GmbH is a Swiss IT company that builds software, runs infrastructure and advises on IT strategy for SMEs, reliably and fast.">
 <link rel="canonical" href="https://invernis.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="INVERNIS">
-<meta property="og:title" content="INVERNIS - Verlässliche Arbeit. Schnell geliefert.">
-<meta property="og:description" content="INVERNIS GmbH ist ein Schweizer IT-Unternehmen, das für KMU Software baut, Infrastruktur betreibt und IT-Strategie berät, verlässlich und schnell.">
+<meta property="og:title" content="INVERNIS - Work you can trust. Delivered quickly.">
+<meta property="og:description" content="INVERNIS GmbH is a Swiss IT company that builds software, runs infrastructure and advises on IT strategy for SMEs, reliably and fast.">
 <meta property="og:url" content="https://invernis.com/">
 <meta property="og:image" content="https://invernis.com/assets/img/hero-summits-day-1320.jpg">
-<meta property="og:locale" content="de_CH">
-<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale" content="en_GB">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/site.css">
-<script>(function(r){try{if(localStorage.getItem('inv-lang')==='en'){r.setAttribute('data-lang','en');r.setAttribute('lang','en');}if(localStorage.getItem('inv-theme')==='dark'){r.setAttribute('data-theme','dark');}}catch(e){}})(document.documentElement);</script>
+<script>(function(r){try{var l=localStorage.getItem('inv-lang');if(l&&l!==r.getAttribute('data-lang')&&(' '+r.getAttribute('data-langs')+' ').indexOf(' '+l+' ')>-1){r.setAttribute('data-lang',l);r.setAttribute('lang',l==='de'?'de-CH':'en');}if(localStorage.getItem('inv-theme')==='dark'){r.setAttribute('data-theme','dark');}}catch(e){}})(document.documentElement);</script>
 <script src="assets/js/site.js" defer></script>
 </head>
 <body>
@@ -35,8 +34,8 @@
     <li><a href="#about"><span lang="en">About</span><span lang="de">Über uns</span></a></li>
     <li><a href="#contact"><span lang="en">Contact</span><span lang="de">Kontakt</span></a></li>
   </ul></nav>
-  <div class="lang" role="group" aria-label="Language / Sprache"><button type="button" id="lang-de" data-set="de" aria-pressed="true">DE</button><span aria-hidden="true">/</span><button type="button" id="lang-en" data-set="en" aria-pressed="false">EN</button></div>
-  <button type="button" class="theme" id="theme" aria-pressed="false" aria-label="Dunkle Ansicht / Dark mode" title="Hell / Dunkel"><svg class="moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 0 1 6.4 2.8a5.6 5.6 0 1 0 6.8 6.8z"/></svg><svg class="sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="8" r="2.8"/><path d="M8 1.6v1.5M8 12.9v1.5M1.6 8h1.5M12.9 8h1.5M3.5 3.5l1 1M11.5 11.5l1 1M3.5 12.5l1-1M11.5 4.5l1-1"/></svg></button>
+  <div class="lang" role="group" hidden aria-label="Language / Sprache"><button type="button" id="lang-de" data-set="de" aria-pressed="true">DE</button><span aria-hidden="true">/</span><button type="button" id="lang-en" data-set="en" aria-pressed="false">EN</button></div>
+  <button type="button" class="theme" id="theme" aria-pressed="false" aria-label="Dark mode" title="Light / dark"><svg class="moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 0 1 6.4 2.8a5.6 5.6 0 1 0 6.8 6.8z"/></svg><svg class="sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="8" r="2.8"/><path d="M8 1.6v1.5M8 12.9v1.5M1.6 8h1.5M12.9 8h1.5M3.5 3.5l1 1M11.5 11.5l1 1M3.5 12.5l1-1M11.5 4.5l1-1"/></svg></button>
 </div></header>
 
 <main id="top">
