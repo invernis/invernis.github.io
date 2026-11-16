@@ -12,7 +12,7 @@ It is a plain static site served by GitHub Pages: no framework, no build step an
 | `404.html` | Page shown for unknown addresses |
 | `assets/css/site.css` | All styles. Colours are CSS variables at the top; the dark theme is `:root[data-theme="dark"]` |
 | `assets/js/site.js` | Language and theme switches |
-| `assets/img/` | Hero photo in a light and a night version, each at 2640 px and 1320 px |
+| `assets/img/` | Hero photo in a light and a night version, each at 2640, 1320 and 800 px; browsers pick the size they need |
 | `assets/brand/` | Original logo files |
 | `assets/fonts/` | Jost, self-hosted under the SIL Open Font License (`OFL.txt`) |
 | `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` | Site icons |
