@@ -63,10 +63,11 @@ nav a:hover,nav a[aria-current]{color:var(--fg)}
 @media (max-width:900px){.nav nav li:nth-child(3),.nav nav li:nth-child(4){display:none}}
 @media (max-width:680px){nav ul{gap:22px}}
 
-/* language: German by default, English when the visitor switches */
+/* language: only the version that matches data-lang on <html> is shown */
 :root:not([data-lang="en"]) [lang="en"]{display:none}
 :root[data-lang="en"] [lang="de"]{display:none}
 .nav nav{margin-left:auto}
+.lang[hidden]{display:none}
 .lang{display:flex;align-items:center;gap:6px;margin-left:40px;font-size:14.6px;letter-spacing:.08em;color:var(--fg-soft)}
 .lang button{all:unset;cursor:pointer;padding:6px 2px;color:var(--fg-soft);transition:color .3s}
 .lang button[aria-pressed="true"]{color:var(--fg);font-weight:500}

@@ -1,4 +1,5 @@
-/* Language switch (German by default) and theme switch (light by default, independent of the device setting).
+/* Language switch and theme switch (light by default, independent of the device setting).
+   The languages on offer are listed in data-langs on <html>; the first one is the default.
    A short inline script in <head> applies the saved choices before the page is drawn; this file connects the buttons. */
 (function(){
   var root=document.documentElement,btns=document.querySelectorAll('.lang button');
@@ -7,8 +8,9 @@
     btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
     if(titles[l]){document.title=titles[l].content;}
     if(save){try{localStorage.setItem('inv-lang',l);}catch(e){}}}
-  var l='de';try{l=localStorage.getItem('inv-lang')||'de';}catch(e){}
-  set(l==='en'?'en':'de',false);
+  var langs=(root.getAttribute('data-langs')||'en').split(' ');
+  var l=langs[0];try{var saved=localStorage.getItem('inv-lang');if(langs.indexOf(saved)>-1){l=saved;}}catch(e){}
+  set(l,false);
   btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.set,true);});});
   var tb=document.getElementById('theme');
   var tc=document.querySelector('meta[name="theme-color"]');
