@@ -154,3 +154,14 @@ footer{padding-block:48px 56px;border-top:1px solid var(--line)}
   .foot nav ul{row-gap:0}
 }
 
+
+/* legal pages: imprint and privacy */
+.legal h2{font-size:clamp(22.4px,2.2vw,26.9px);font-weight:400;margin:56px 0 14px}
+.legal .lead+h2,.legal .lead+p{margin-top:56px}
+.legal p:not(.lead):not(.updated){font-size:17.9px;color:var(--fg-soft);overflow-wrap:anywhere}
+.legal p+p{margin-top:14px}
+.legal p:not(.lead) a{color:var(--fg);border-bottom:1px solid var(--line);transition:border-color .3s}
+.legal p:not(.lead) a:hover{border-color:var(--fg)}
+.legal code{font-family:inherit;color:var(--fg)}
+.legal .todo{background:none;color:var(--accent)}
+.legal .updated{margin-top:64px;font-size:14.6px;color:var(--fg-soft)}
